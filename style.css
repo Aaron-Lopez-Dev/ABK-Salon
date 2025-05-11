@@ -1,0 +1,118 @@
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --blue-accent: rgba(6,45,104);
+    --red-accent: rgba(182,18,26);
+    --primary-font: ;
+    --full-vh: 100vh;
+    --half-vh: 50vh;
+    --test-border: 2px blue solid;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+#navbar{
+    width: 100vw; 
+    z-index: 999;
+    position: fixed;
+    height: 60px;
+    border-radius: 0 0 3px 3px;
+    justify-content: center;
+    display: inline-flex;
+}
+
+.navContent{
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 60px;
+    max-width: 1200px;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLinks{
+    align-items: right !important;
+    height: fit-content;
+    width: fit-content;
+
+}
+.navLogo{
+    width: 150px;
+    display: inline-flex;
+    height: 60px;
+    justify-content: left;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.name{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    color: rgb(248, 250, 241);
+}
+
+.navImage{
+    width: 55px;
+    height: 55px;
+}
+
+#navbar.scrolled {
+    background-color: rgba(48 63 47);
+  }
+
+li{
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    color: rgb(248, 250, 241);
+    font-weight: 600;
+}
+
+
+.hero, section{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    border: blue 2px solid;
+}
+
+.hero{
+    background-image: url(assets/adrian-fernandez-t1jlLrsMpjc-unsplash.jpg);
+    z-index: -5;
+}
+
+.contentBox{
+    height: 100vh;
+    width: 80%;
+    max-width: 3187px;
+    border: var(--test-border);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.heading{
+    margin: calc(.5*100vh) auto;
+    text-align: center;
+    font-size: 7rem;
+    color: var(--secondary-color);
+    border: var(--test-border);
+}
