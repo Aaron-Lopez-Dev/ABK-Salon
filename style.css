@@ -1,6 +1,6 @@
 :root{
     --primary-color: black;
-    --secondary-color: white;
+    --secondary-color: rgb(248, 250, 241);
     --blue-accent: rgba(6,45,104);
     --red-accent: rgba(182,18,26);
     --primary-font: ;
@@ -17,7 +17,7 @@
 a{
     list-style-type: none;
     text-decoration: none;
-    color: white;
+    color: black;
     margin-right: 10px;
 }
 
@@ -60,7 +60,7 @@ a{
 .name{
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 600;
-    color: rgb(248, 250, 241);
+    color: black;
 }
 
 .navImage{
@@ -71,6 +71,9 @@ a{
 #navbar.scrolled {
     background-color: black;
   }
+#links.scrolled, #links2.scrolled, #name.scrolled{
+    color: rgb(248, 250, 241);
+}
 
 li{
     text-align: center;
@@ -87,7 +90,6 @@ li{
     background-color: var(--primary-color);
     justify-content: center;
     align-items: center;
-    border: blue 2px solid;
 }
 .hero{
     background-image: url(assets/bgwwhite.png);
@@ -98,21 +100,42 @@ li{
     height: 100vh;
     width: 80%;
     max-width: 3187px;
-    border: var(--test-border);
     justify-content: center;
     align-items: center;
     margin: auto;
 }
 
 .heading{
-    margin: 250px auto;
+    margin: auto;
     text-align: center;
     font-size: 7rem;
     color: var(--blue-accent);
-    border: var(--test-border);
     text-shadow: black;
     width: 80%;
     max-width: 1000px;
+    border: black 2px solid;
+
+}
+.custom-shape-divider-bottom-1748574135 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1748574135 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 103px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1748574135 .shape-fill {
+    fill: #000000;
 }
 
 @media screen and (max-width: 800px){
@@ -122,3 +145,4 @@ li{
 }
 
 }
+
