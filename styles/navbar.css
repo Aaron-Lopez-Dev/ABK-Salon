@@ -1,0 +1,79 @@
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+li {
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    color: rgb(248, 250, 241);
+    font-weight: 600;
+}
+
+#navbar {
+    width: 100vw;
+    z-index: 999;
+    position: fixed;
+    height: 60px;
+    border-radius: 0 0 3px 3px;
+    justify-content: center;
+    display: inline-flex;
+}
+
+.navContent {
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 60px;
+    max-width: 1200px;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLinks {
+    align-items: right !important;
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.navLogo {
+    width: 150px;
+    display: inline-flex;
+    height: 60px;
+    justify-content: left;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.name {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.navImage {
+    width: 55px;
+    height: 55px;
+}
+
+#navbar.scrolled {
+    background-color: black;
+}
+
+#links {
+    padding: 5px 10px;
+    background-color: rgba(182, 18, 26);
+    color: rgb(248, 250, 241);
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#links.scrolled,
+#sectionName.scrolled {
+    color: rgb(248, 250, 241);
+}
