@@ -3,7 +3,8 @@
     --secondary-color: rgb(248, 250, 241);
     --blue-accent: rgba(6, 45, 104);
     --red-accent: rgba(182, 18, 26);
-    --primary-font: ;
+    --primary-font: "Corinthia", cursive;
+    --font-bold: 700;
     --full-vh: 100vh;
     --half-vh: 50vh;
     --test-border: 2px blue solid;
@@ -34,15 +35,14 @@ html {
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
     z-index: -5;
     background-size: cover;
     position: sticky;
     top: 0;
 }
 
-section{
+section {
     height: 100vh;
     background-color: var(--primary-color);
     width: 100%;
@@ -53,15 +53,19 @@ section{
     position: sticky;
 }
 
-.services{
+.services {
     z-index: -4;
     top: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
-.contact{
+
+.contact {
     z-index: -3;
     top: 0;
 }
-.book{
+
+.book {
     z-index: -2;
     top: 0;
 }
@@ -75,15 +79,43 @@ section{
     margin: auto;
 }
 
-.heading {
-    margin: auto;
-    text-align: center;
-    font-size: 7rem;
+.heading,
+.subheading,
+.punchline {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 3.5rem;
     color: var(--primary-color);
     text-shadow: black;
     width: 80%;
     max-width: 1000px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-style: normal;
+    line-height: .7;
+    padding: 0;
+}
 
+.punchline {
+    margin-bottom: 50px;
+}
+
+#sectionName,
+#links {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hours,
+address {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.address {
+    font-style: italic;
 }
 
 svg {
@@ -97,16 +129,50 @@ svg {
     height: 400px;
     max-width: 600px;
 }
-.phone{
+
+.phone {
+    color: var(--secondary-color);
     padding: 5px 10px;
     border-radius: 10px;
     background-color: var(--blue-accent);
     margin: 10px 0px;
 }
-@media screen and (max-width: 800px) {
 
-    .heading {
-        font-size: 4rem;
-    }
+.service {
+    height: 30%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
 
+.image{
+    background-size: 100%;
+    background-position: center;
+    height: 100%;
+    border-radius: 15px;
+}
+.imageHaircut{
+    background-image: url(../assets/serviceImage.jpg);
+}
+.imageTreatment{
+    background-image: url(../assets/lindsay-cash-Md_DhaFsnCQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imageBlowout{
+    background-image: url(../assets/aditya-sethia-jWaK7wl0b1s-unsplash.jpg);
+}
+
+.serviceContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    max-width: 167px;
+    max-height: 275px;
+}
+
+.serviceCenter{
+    justify-content: center;
 }

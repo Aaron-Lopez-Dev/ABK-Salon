@@ -44,3 +44,21 @@ function monitorYPosition() {
 }
 // For Initial Load
 monitorYPosition()
+
+//Hero Section
+ScrollReveal().reveal('.heading');
+ScrollReveal().reveal('.subheading', { delay: 500 });
+ScrollReveal().reveal('.punchline', { delay: 1500 });
+
+//Service Section
+ScrollReveal().reveal('.serviceOne')
+ScrollReveal().reveal('.serviceTwo', { delay: 300 })
+ScrollReveal().reveal('.serviceThree', { delay: 400 })
+ScrollReveal().reveal('.serviceFour', { delay: 500 })
+
+//Contact Section
+ScrollReveal().reveal('.hoursHedaing', { delay: 100 });
+ScrollReveal().reveal('.hours', { delay: 300 })
+ScrollReveal().reveal('.phone', { delay: 400 });
+ScrollReveal().reveal('.address', { delay: 500 });
+ScrollReveal().reveal('.googleMap', { delay: 1000 });
